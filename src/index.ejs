@@ -1,0 +1,42 @@
+<!--
+ * @Description: 
+ * @Version: 1.0
+ * @Autor: in hengqi by mengze 
+ * @Date: 2021-02-20 16:53:01
+ * @LastEditors: in hengqi by mengze
+ * @LastEditTime: 2021-02-24 17:34:01
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>swagger内容生成url配置小工具</title>
+    <% if (htmlWebpackPlugin.options.nodeModules) { %>
+      <!-- Add `node_modules/` to global paths so `require` works properly in development -->
+      <script>
+        require('module').globalPaths.push('<%= htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\') %>')
+      </script>
+    <% } %>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <body  style="-webkit-app-region: drag">
+      <div id="app"></div>
+    </body>
+
+    <!-- webpack builds are automatically injected -->
+  </body>
+</html>
